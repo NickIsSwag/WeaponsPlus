@@ -1,0 +1,26 @@
+modLoader="javafml" 
+loaderVersion="[43,)" 
+license="All rights reserved"
+[[mods]] 
+modId="weaponsplus" 
+version="${file.jarVersion}" 
+displayName="Weapons Plus" 
+logoFile="examplemod.png" 
+credits="if this works i will be so happy" 
+authors="gg7 / nick" 
+description='''
+building upon the already existing minecraft weapons system by adding in new types of weapons and new weapons >:)
+'''
+[[dependencies.weaponsplus]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[43,)" 
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.weaponsplus]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"

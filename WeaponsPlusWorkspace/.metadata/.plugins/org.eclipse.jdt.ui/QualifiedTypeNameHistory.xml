@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.CreativeModeTab"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.DeferredRegister"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.ForgeRegistries"/>
+    <fullyQualifiedTypeName name="T"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Supplier"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.eventbus.api.IEventBus"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.level.block.Block"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Item"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Function"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.RegistryObject"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.level.block.state.BlockBehaviour"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.level.block.state.BlockBehaviour.Properties"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.level.material.Material"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.level.material.MaterialColor"/>
+    <fullyQualifiedTypeName name="com.gg7.weaponsplus.init.BlockInit"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.level.block.SoundType"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.SwordItem"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Item.Properties"/>
+    <fullyQualifiedTypeName name="com.gg7.weaponsplus.WeaponsPlus"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.crafting.Ingredient"/>
+    <fullyQualifiedTypeName name="com.gg7.weaponsplus.init.ItemInit"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.common.ForgeTier"/>
+</qualifiedTypeNameHistroy>

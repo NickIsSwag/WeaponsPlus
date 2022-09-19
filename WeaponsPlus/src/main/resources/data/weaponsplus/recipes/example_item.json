@@ -1,0 +1,35 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		" I ",
+		"IDI",
+		" I "
+		
+	],
+	"key":{
+		"I":{
+			"item": "minecraft:echo_shard"
+		},	
+		"D":{
+			"item": "minecraft:diamond"
+		}
+	},
+	"result":{
+		"item": "weaponsplus:example_item",
+		"count": 1
+	}
+},
+{
+	"type": "crafting_shapeless",
+	
+	"ingredients": [
+		{
+		"item": "weaponsplus:example_block"
+		}
+	],
+	"result":{
+		"item": "weaponsplus:example_item",
+		"count": 9
+	}
+}
