@@ -2,6 +2,10 @@
 	"item.weaponsplus.example_item": "Echo Diamond",
 	"itemGroup.weaponsplus": "WeaponsPlus",
 	"block.weaponsplus.example_block": "Echo Diamond Block",
-	"item.weaponsplus.echo_diamond_sword": "Echo Diamond Sword"
+	"item.weaponsplus.echo_diamond_sword": "Echo Diamond Sword",
+	"item.weaponsplus.echo_diamond_axe": "Echo Diamond Axe",
+	"item.weaponsplus.echo_diamond_pickaxe": "Echo Diamond Pickaxe",
+	"item.weaponsplus.echo_diamond_shovel": "Echo Diamond Shovel",
+	"item.weaponsplus.echo_diamond_hoe": "Echo Diamond Hoe"
 
 }
