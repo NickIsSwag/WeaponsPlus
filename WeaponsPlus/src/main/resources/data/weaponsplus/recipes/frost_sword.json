@@ -1,0 +1,27 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		"IDI",
+		"DCD",
+		" B "
+	],
+	"key":{
+		"I":{
+			"item": "minecraft:blue_ice"
+		},
+		"D":{
+			"item": "minecraft:diamond"
+		},
+		"C":{
+			"item": "weaponsplus:frost_core"
+		},
+		"B":{
+			"item": "minecraft:stick"
+		}	
+	},
+	"result":{
+		"item": "weaponsplus:frost_sword",
+		"count": 1
+	}
+}

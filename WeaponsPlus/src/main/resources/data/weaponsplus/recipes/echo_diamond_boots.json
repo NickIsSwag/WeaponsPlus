@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		"I I",
+		"I I"
+	],
+	"key":{
+		"I":{
+			"item": "weaponsplus:example_item"
+		}
+	},
+	"result":{
+		"item": "weaponsplus:echo_diamond_boots",
+		"count": 1
+	}
+}

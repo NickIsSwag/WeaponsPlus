@@ -1,0 +1,24 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		" O ",
+		"OIO",
+		" B "
+	],
+	"key":{
+		"I":{
+			"item": "weaponsplus:example_item"
+		},
+		"B":{
+			"item": "minecraft:stick"
+		},	
+		"O":{
+			"item": "minecraft:obsidian"
+		}
+	},
+	"result":{
+		"item": "weaponsplus:echo_diamond_dagger",
+		"count": 1
+	}
+}

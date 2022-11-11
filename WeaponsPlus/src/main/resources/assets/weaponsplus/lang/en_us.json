@@ -2,10 +2,23 @@
 	"item.weaponsplus.example_item": "Echo Diamond",
 	"itemGroup.weaponsplus": "WeaponsPlus",
 	"block.weaponsplus.example_block": "Echo Diamond Block",
+	
 	"item.weaponsplus.echo_diamond_sword": "Echo Diamond Sword",
+	"item.weaponsplus.echo_diamond_dagger": "Echo Diamond Dagger",
 	"item.weaponsplus.echo_diamond_axe": "Echo Diamond Axe",
 	"item.weaponsplus.echo_diamond_pickaxe": "Echo Diamond Pickaxe",
 	"item.weaponsplus.echo_diamond_shovel": "Echo Diamond Shovel",
-	"item.weaponsplus.echo_diamond_hoe": "Echo Diamond Hoe"
+	"item.weaponsplus.echo_diamond_hoe": "Echo Diamond Hoe",
+	
+	"item.weaponsplus.echo_diamond_helmet": "Echo Diamond Helmet",
+	"item.weaponsplus.echo_diamond_chestplate": "Echo Diamond Chestplate",
+	"item.weaponsplus.echo_diamond_leggings": "Echo Diamond Leggings",
+	"item.weaponsplus.echo_diamond_boots": "Echo Diamond Boots",
+	
+	"effect.weaponsplus.dark_strength": "Dark Strength",
+	
+	"item.weaponsplus.frost_core": "Frost Core",
+	"item.weaponsplus.frost_sword": "Frost Sword",
+	"item.weaponsplus.poison_staff": "Poison Staff"
 
 }

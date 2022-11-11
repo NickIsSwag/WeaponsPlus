@@ -1,0 +1,24 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		" OI",
+		" BO",
+		"B  "
+	],
+	"key":{
+		"I":{
+			"item": "minecraft:poisonous_potato"
+		},
+		"B":{
+			"item": "minecraft:stick"
+		},	
+		"O":{
+			"item": "minecraft:end_crystal"
+		}
+	},
+	"result":{
+		"item": "weaponsplus:poison_staff",
+		"count": 1
+	}
+}
