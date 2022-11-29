@@ -1,0 +1,24 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		" OO",
+		"OIO",
+		"BO "
+	],
+	"key":{
+		"I":{
+			"item": "minecraft:nether_star"
+		},
+		"B":{
+			"item": "minecraft:stick"
+		},	
+		"O":{
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	"result":{
+		"item": "weaponsplus:vampiric_blade",
+		"count": 1
+	}
+}

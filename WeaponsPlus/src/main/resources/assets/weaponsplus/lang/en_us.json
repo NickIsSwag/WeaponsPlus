@@ -19,6 +19,11 @@
 	
 	"item.weaponsplus.frost_core": "Frost Core",
 	"item.weaponsplus.frost_sword": "Frost Sword",
-	"item.weaponsplus.poison_staff": "Poison Staff"
+	"item.weaponsplus.poison_staff": "Poison Staff",
+	"item.weaponsplus.vampiric_blade": "Vampiric Blade",
+	"enchantment.weaponsplus.experience_junkie": "Experience Junkie",
+	"enchantment.weaponsplus.boomalicious": "Boomalicious",
+	
+	"sounds.weaponsplus.vine_boom": "Vine Boom"
 
 }

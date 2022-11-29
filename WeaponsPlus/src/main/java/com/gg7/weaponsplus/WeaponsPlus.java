@@ -1,9 +1,11 @@
 package com.gg7.weaponsplus;
 
 import com.gg7.weaponsplus.effect.ModEffects;
+import com.gg7.weaponsplus.enchantment.ModEnchantments;
 import com.gg7.weaponsplus.init.BlockInit;
 import com.gg7.weaponsplus.init.ItemInit;
 import com.gg7.weaponsplus.init.ItemInit.ModPainting;
+import com.gg7.weaponsplus.sound.ModSounds;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -38,6 +40,8 @@ public class WeaponsPlus {
 		
 		ModPainting.register(bus);
 		ModEffects.register(bus);
+		ModSounds.register(bus);
+		ModEnchantments.register(bus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
 	}

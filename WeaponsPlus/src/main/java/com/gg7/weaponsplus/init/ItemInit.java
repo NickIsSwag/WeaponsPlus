@@ -40,6 +40,9 @@ public class ItemInit {
 	public static final RegistryObject<SwordItem> FROST_SWORD = register("frost_sword",
 			() -> new SlownessSwordItem(Tiers.FROST, 4, -2.4f, new Item.Properties().tab(WeaponsPlus.WeaponsPlusTab).stacksTo(1)));
 	
+	public static final RegistryObject<SwordItem> VAMPIRIC_BLADE = register("vampiric_blade",
+			() -> new VampiricSwordItem(Tiers.VAMPIRIC, 4, -2.4f, new Item.Properties().tab(WeaponsPlus.WeaponsPlusTab).stacksTo(1)));
+	
 	public static final RegistryObject<SwordItem> ECHO_SWORD = ITEMS.register("echo_diamond_sword", 
 			() -> new SwordItem(Tiers.Echo, 5, -2.4f, new Item.Properties().tab(WeaponsPlus.WeaponsPlusTab).stacksTo(1)));
 	
@@ -80,6 +83,7 @@ public class ItemInit {
 	public static class Tiers{
 		
 		public static final Tier Echo = new ForgeTier(3, 1800, 35.0f, 2.0f, 100, null, () -> Ingredient.of(ItemInit.EXAMPLE_ITEM.get()));
+		public static final Tier VAMPIRIC = new ForgeTier(3, 1000, 5.0f, 0.0f, 100, null, () -> Ingredient.of(Items.ROTTEN_FLESH));
 		public static final Tier FROST = new ForgeTier(3, 1000, 5.0f, 0.0f, 100, null, () -> Ingredient.of(ItemInit.FROST_CORE.get()));
 		public static final Tier STAFF = new ForgeTier(3, 100, 0.0f, 0.0f, 0, null, () -> Ingredient.of(Items.STICK));
 		
@@ -116,6 +120,27 @@ public class ItemInit {
 			
 			if (chance == 2) {	
 				pTarget.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100), pAttacker);
+			}
+			return super.hurtEnemy(p_43278_, pTarget, pAttacker);
+		}
+		
+	}
+	
+	public static class VampiricSwordItem extends SwordItem{
+		
+		public VampiricSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+			
+			super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
+			
+		}
+		
+		@Override
+		public boolean hurtEnemy(ItemStack p_43278_, LivingEntity pTarget, LivingEntity pAttacker) {
+
+			
+			
+			if (pTarget.isAlive() && !pTarget.isInvertedHealAndHarm()) {	
+				pAttacker.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1, 40), pAttacker);
 			}
 			return super.hurtEnemy(p_43278_, pTarget, pAttacker);
 		}
