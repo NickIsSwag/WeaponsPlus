@@ -51,4 +51,5 @@
     <fullyQualifiedTypeName name="com.gg7.weaponsplus.WeaponsPlus"/>
     <fullyQualifiedTypeName name="com.gg7.weaponsplus.sound.ModSounds"/>
     <fullyQualifiedTypeName name="net.minecraft.world.entity.player.Player"/>
+    <fullyQualifiedTypeName name="com.gg7.weaponsplus.init.ItemInit.ProjectileSwordItem"/>
 </qualifiedTypeNameHistroy>

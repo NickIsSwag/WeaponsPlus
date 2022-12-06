@@ -24,9 +24,7 @@ public class Boomalicious extends Enchantment  {
 		
 		return 1;
 		
-	}
-	
-	
+	}	
 	
 	@Override
 	public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
@@ -42,5 +40,7 @@ public class Boomalicious extends Enchantment  {
 		super.doPostHurt(pAttacker, pTarget, pLevel);
 		
 	}
+	
+	
 
 }

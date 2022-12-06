@@ -3,13 +3,22 @@ package com.gg7.weaponsplus.init;
 import com.gg7.weaponsplus.ModArmorItem;
 import com.gg7.weaponsplus.ModArmorMaterials;
 import com.gg7.weaponsplus.WeaponsPlus;
+import com.gg7.weaponsplus.sound.ModSounds;
 import com.google.common.base.Supplier;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.decoration.PaintingVariant;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
@@ -22,6 +31,7 @@ import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -75,6 +85,9 @@ public class ItemInit {
 	
 	public static final RegistryObject<SwordItem> POISON_STAFF = ITEMS.register("poison_staff", 
 			() -> new PoisonSwordItem(Tiers.STAFF, 0, -3.5f, new Item.Properties().tab(WeaponsPlus.WeaponsPlusTab).stacksTo(1).rarity(Rarity.RARE)));
+	
+	public static final RegistryObject<SwordItem> THE_ROCK = ITEMS.register("the_rock", 
+			() -> new ProjectileSwordItem(Tiers.STAFF, 0, -3.5f, new Item.Properties().tab(WeaponsPlus.WeaponsPlusTab).stacksTo(1).rarity(Rarity.RARE)));
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);
@@ -162,6 +175,44 @@ public class ItemInit {
 			pTarget.addEffect(new MobEffectInstance(MobEffects.POISON, 180), pAttacker);
 			
 			return super.hurtEnemy(p_43278_, pTarget, pAttacker);
+		}
+		
+	}
+	
+public static class ProjectileSwordItem extends SwordItem{ //unfinished- ran out of time
+		
+		public ProjectileSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+			
+			super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
+			
+		}
+		
+		@Override
+		public boolean hurtEnemy(ItemStack p_43278_, LivingEntity pTarget, LivingEntity pAttacker) {
+			
+			return super.hurtEnemy(p_43278_, pTarget, pAttacker);
+		}
+		
+		@Override
+		public int getUseDuration(ItemStack p_41454_) {
+		// TODO Auto-generated method stub
+		return 60;
+		}
+		
+		@Override
+		public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
+		// TODO Auto-generated method stub
+			
+			ServerLevel world = ( (ServerLevel) pPlayer.level);
+			BlockPos block = pPlayer.blockPosition();
+			
+			if (!pPlayer.level.isClientSide()) {
+				
+				System.out.println("slay");
+				world.playSound(pPlayer, block, ModSounds.VINE_BOOM.get(), SoundSource.AMBIENT, 1f, 1f);
+			}
+			
+		return super.use(pLevel, pPlayer, pHand);
 		}
 		
 	}
